@@ -1,1 +1,2 @@
 # google_homepage
+This project consist of deconstructing the google homepage and rebuilding it. This project is mdade(by the odin project) to test learners knowledge of how elements are being placed on a webpage that is; basic html and css.
