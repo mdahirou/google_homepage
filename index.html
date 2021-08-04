@@ -1,94 +1,134 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>google_homepage</title>
-        <style>
-            .nav {
-                position: absolute;
-                right: 2px;
-                padding: 3px;
-                top: 5px;
-            }
-            ul {
-                display: inline-flex;
-            }
-            li {
-                list-style-type: none;
-            }
-            a {
-                text-decoration: none;
-                color: rgb(78, 78, 78);
-            }
-            .btn1 {
-                background-color: blue;
-                height: 30px;
-                width: 60px;
-                padding: 2px;
-                border: 1px solid transparent;
-                border-radius: 7px;
-            }
-            h1 {
-                position: absolute;
-                top: 80px;
-                left: 37%;
-                font-size: 60px;
-            }
-            .blue {
-                color: mediumblue;
-            }
-            .red {
-                color: red;
-            }
-            .green {
-                color: green;
-            }
-            .yellow {
-                color: gold;
-            }
-            .sbox {
-                height: 30px;
-                width: 60%;
-                position: absolute;
-                top: 255px;
-                left: 20%;
-                border-radius: 10px;
-                border: 1px solid black;
-                padding: 7px;
-            }
-            .gsb {
-                position: absolute;
-                top: 370px;
-                left: 28%;
-                padding: 3px;
-                color: rgb(78, 78, 78);
-                background-color: gray;
-                border: outset;
-                height: 35px;
-                width: 110px;
-            }
-            .ifl {
-                position: absolute;
-                top: 370px;
-                right: 28%;
-                padding: 3px;
-                color: rgb(78, 78, 78);
-                background-color: gray;
-                border: outset;
-                height: 35px;
-                width: 110px;
-            }
-            footer {
-                position: absolute;
-                top: 490px;
-                width: 100%;
-                background-color: grey;
-                text-align: center;
-            }
-        </style>
-    </head>
+    <link rel="favicon" href="https://www.google.com/favicon.ico">
+    <style>
+        nav {
+            padding: 5px;
+        }
+        #nav1 {
+            position: absolute;
+            top: 3px;
+            left: 3px;
+        }
+        #nav2 {
+            position: absolute;
+            top: 3px;
+            right: 3px;
+        }
+        ul {
+            display: inline-flex;
+            list-style-type: none;
+        }
+        a {
+            text-decoration: none;
+            color: rgb(29, 28, 28);
+        }
+        a:hover {
+            color: rgb(145, 139, 139);
+        }
+        img {
+            height: 30px;
+            width: 30px;
+            border-radius: 15px;
+            border: 1px solid transparent;
+        }
+        .blue {
+            color: rgb(0, 0, 255);
+        }
+        .red {
+            color: red;
+        }
+        .green {
+            color: green;
+        }
+        .yellow {
+            color: yellow;
+        }
+        #header {
+            position: absolute;
+            top: 80px;
+            left: 35%;
+            font-size: 60px;
+            font-weight: 900;
+            width: 60%;
+            height: 40px;
+        }
+        #sbox {
+            position: absolute;
+            top: 250px;
+            left: 9%;
+            width: 80%;
+            height: 30px;
+            border: 1px solid gray;
+            border-radius: 15px;
+            padding: 4px;
+            margin: 30px 0px;
+            background-color: transparent;
+            background: url(/google-homepage/desktop_searchbox_sprites302_hr.webp) no-repeat scroll 10px 6px;
+        }
+        #box:hover {
+            background-color: rgb(128, 125, 125);
+            border: 1px solid gray;
+        }
+        input:focus, textarea {
+            outline: none !important;
+        }
+        #gs {
+            position: absolute;
+            top: 340px;
+            background-color: rgb(168, 166, 166);
+            border: outset;
+            padding: 3px;
+            left: 30%;
+            color: gray;
+            height: 30px;
+        }
+        #ifl {
+            position: absolute;
+            top: 340px;
+            background-color: rgb(172, 168, 168);
+            border: outset;
+            padding: 3px;
+            right: 30%;
+            color: gray;
+            height: 30px;
+        }
+        #ifl:hover{
+            background-color: rgb(158, 152, 152);
+        }
+        #gs:hover {
+            background-color: rgb(158, 152, 152);
+        }
+        footer {
+            position: absolute;
+            bottom: 1px;
+            background-color: rgb(107, 105, 105);
+            width: 100%;
+            height: 45px;
+        }
+        #footer1 {
+            position: absolute;
+            left: 3px;
+        }
+        #footer2 {
+            position: absolute;
+            right: 3px;
+        }
+    </style>
     <body>
-        <header>
-            <div class="nav">
+        <header id="nav">
+            <div id="nav1">
+                <ul>
+                    <li>
+                        <a href="#">About</a>
+                    </li>
+                    &nbsp;&nbsp;&nbsp;
+                    <li>
+                        <a href="#">Store</a>
+                    </li>
+                </ul>
+            </div>
+            <div id="nav2">
                 <ul>
                     <li>
                         <a href="#">Gmail</a>
@@ -103,58 +143,59 @@
                     </li>
                     &nbsp;&nbsp;&nbsp;
                     <li>
-                        <button class="btn1">Sign In</button>
+                        <img src="https://wwww.dropobox.com/s/14gqk4vqc9ctgtr/img_20210715_104337_654.jpg?dl=0"/>
                     </li>
                 </ul>
             </div>
+            <section>
+                <h1 id="header">
+                    <b class="blue">G</b>
+                    <b class="red">o</b>
+                    <b class="yellow">o</b>
+                    <b class="blue">g</b>
+                    <b class="green">l</b>
+                    <b class="red">e</b>
+                </h1>
+                <form>
+                    <input type="search" placeholder="Search or enter url" id="sbox"/>
+                </form>
+                <div id="usbox">
+                    <button id="gs">Google Search</button>
+                    <button id="ifl">I'm Feeling Lucky</button>
+                </div>
+            </section>
+            <footer>
+                <div id="footer1">
+                    <ul>
+                        <li>
+                            <a href="#">Advertising</a>
+                        </li>
+                        &nbsp;&nbsp;&nbsp;
+                        <li>
+                            <a href="#">Business</a>
+                        </li>
+                        &nbsp;&nbsp;&nbsp;
+                        <li>
+                            <a href="#">About</a>
+                        </li>
+                    </ul>
+                </div>
+                <div id="footer2">
+                    <ul>
+                        <li>
+                            <a href="#">Privacy</a>
+                        </li>
+                        &nbsp;&nbsp;&nbsp;
+                        <li>
+                            <a href="#">Terms</a>
+                        </li>
+                        &nbsp;&nbsp;&nbsp;
+                        <li>
+                            <a href="#">Settings</a>
+                        </li>
+                    </ul>
+                </div>
+            </footer>
         </header>
-        <section>
-            <h1>
-                <b class="blue">G</b>
-                <b class="red">o</b>
-                <b class="yellow">o</b>
-                <b class="blue">g</b>
-                <b class="green">l</b>
-                <b class="red">e</b>
-            </h1>
-            <form>
-                <input type="search" class="sbox" placeholder="Google Search"/>
-                <br><br>
-                <input type="button" class="gsb" value="Google Search"/>
-                <input type="button" class="ifl" value="I'm Feeling Lucky"/>
-            </form>
-        </section>
-        <footer>
-            <div class="f1">
-                <ul>
-                    <li>
-                        <a href="#">Privacy</a>
-                    </li>
-                    &nbsp;&nbsp;&nbsp;
-                    <li>
-                        <a href="#">Terms</a>
-                    </li>
-                    &nbsp;&nbsp;&nbsp;
-                    <li>
-                        <a href="#">Settings</a>
-                    </li>
-                </ul>
-            </div>
-            <div class="f2">
-                <ul>
-                    <li>
-                        <a href="#">Advertising</a>
-                    </li>
-                    &nbsp;&nbsp;&nbsp;
-                    <li>
-                        <a href="#">Business</a>
-                    </li>
-                    &nbsp;&nbsp;&nbsp;
-                    <li>
-                        <a href="#">About</a>
-                    </li>
-                </ul>
-            </div>
-        </footer>
     </body>
 </html>
